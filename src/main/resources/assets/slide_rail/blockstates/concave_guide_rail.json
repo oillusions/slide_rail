@@ -1,0 +1,80 @@
+{
+  "variants": {
+    "facing=up,axis=x": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "y": 90.0
+    },
+    "facing=up,axis=z": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "y": 180.0
+    },
+    "facing=north,axis=x": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "y": 90.0,
+      "z": 270.0
+    },
+    "facing=north,axis=y": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "x": 270.0,
+      "y": 180.0
+    },
+    "facing=south,axis=x": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "y": 270.0,
+      "z": 270.0
+    },
+    "facing=south,axis=y": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "x": 90.0,
+      "y": 180.0
+    },
+    "facing=west,axis=z": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "y": 180.0,
+      "z": 90.0
+    },
+    "facing=west,axis=y": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "x": 270.0,
+      "y": 90.0
+    },
+    "facing=east,axis=z": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "z": 90.0
+    },
+    "facing=east,axis=y": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "x": 90.0,
+      "y": 90.0
+    },
+    "facing=down,axis=x": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "y": 270.0,
+      "z": 180.0
+    },
+    "facing=down,axis=z": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "z": 180.0
+    },
+    "facing=north,axis=z": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "x": 270.0,
+      "y": 180.0
+    },
+    "facing=south,axis=z": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "x": 90.0,
+      "y": 180.0
+    },
+    "facing=west,axis=x": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "x": 270.0,
+      "y": 90.0
+    },
+    "facing=east,axis=x": {
+      "model": "slide_rail:block/concave_guide_rail",
+      "x": 90.0,
+      "y": 90.0
+    }
+  }
+}

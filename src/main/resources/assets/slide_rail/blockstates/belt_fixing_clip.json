@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "slide_rail:block/belt_fixing_clip"
+    },
+    "facing=down": {
+      "model": "slide_rail:block/belt_fixing_clip"
+    }
+  }
+}

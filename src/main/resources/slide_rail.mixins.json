@@ -1,0 +1,17 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "cn.oillusions.slide_rail.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [
+        "BlockStateModelLoaderMixin"
+    ],
+    "client": [
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "overwrites": {
+        "requireAnnotations": true
+    }
+}

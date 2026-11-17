@@ -1,0 +1,9 @@
+{
+  "slide_rail.name": "Guide rail",
+  "itemGroup.slide_rail.base": "Guide rail",
+  "block.slide_rail.concave_guide_rail": "Concave guide rail",
+  "block.slide_rail.convex_guide_rail": "Convex guide rail",
+  "block.slide_rail.concave_slide_block": "Concave slide block",
+  "block.slide_rail.convex_slide_block": "Convex slide block",
+  "block.slide_rail.belt_fixing_clip": "Belt fixing clip"
+}
