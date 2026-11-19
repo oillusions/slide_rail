@@ -1,5 +1,6 @@
 package cn.oillusions.slide_rail;
 
+import cn.oillusions.slide_rail.content.belt_fixing_clip.BeltFixingClipItem;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -31,8 +32,8 @@ public class AllItems {
         "concave_guide_rail", AllBlocks.CONCAVE_GUIDE_RAIL_BLOCK
     );
 
-    public static final DeferredHolder<Item, BlockItem> BELT_FIXING_CLIP_ITEM = REGISTER.registerSimpleBlockItem(
-        "belt_fixing_clip", AllBlocks.BELT_FIXING_CLIP_BLOCK
+    public static final DeferredHolder<Item, BlockItem> BELT_FIXING_CLIP_ITEM = REGISTER.register(
+        "belt_fixing_clip", () -> new BeltFixingClipItem(new Item.Properties())
     );
 
     public static void register(IEventBus modEventBus) {

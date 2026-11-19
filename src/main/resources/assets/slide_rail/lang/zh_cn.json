@@ -1,6 +1,6 @@
 {
-  "slide_rail.name": "滑轨",
-  "itemGroup.slide_rail.base": "滑轨",
+  "slide_rail.name": "机械动力：滑轨",
+  "itemGroup.slide_rail.base": "机械动力：滑轨",
   "block.slide_rail.concave_guide_rail": "凹形导轨",
   "block.slide_rail.convex_guide_rail": "凸形导轨",
   "block.slide_rail.concave_slide_block": "凹形滑块",

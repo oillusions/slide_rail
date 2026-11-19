@@ -1,6 +1,6 @@
 package cn.oillusions.slide_rail.content.slide_block;
 
-import cn.oillusions.slide_rail.content.foundation.DirectionAxisBlock;
+import cn.oillusions.slide_rail.content.foundation.FullyOrientedBlock;
 import cn.oillusions.slide_rail.content.util.DirectionalAxisVoxelShaper;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -13,7 +13,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
 public class ConcaveSlideBlock
-    extends DirectionAxisBlock {
+    extends FullyOrientedBlock {
     public static final VoxelShape SHAPE_X = Shapes.or(
         Block.box(0, 12, 0, 16, 16, 16),
         Block.box(0, 2, 0, 2, 12, 16),
@@ -38,7 +38,7 @@ public class ConcaveSlideBlock
         @NotNull CollisionContext context
     ) {
         Direction facing = blockState.getValue(FACING);
-        Direction.Axis axis = blockState.getValue(AXIS);
-        return SHAPER.get(facing, axis);
+        boolean rotation = blockState.getValue(ROTATION);
+        return SHAPER.get(facing, rotation);
     }
 }

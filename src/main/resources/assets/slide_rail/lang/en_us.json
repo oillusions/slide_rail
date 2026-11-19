@@ -1,6 +1,6 @@
 {
-  "slide_rail.name": "Guide rail",
-  "itemGroup.slide_rail.base": "Guide rail",
+  "slide_rail.name": "Create: Guide rail",
+  "itemGroup.slide_rail.base": "Create: Guide rail",
   "block.slide_rail.concave_guide_rail": "Concave guide rail",
   "block.slide_rail.convex_guide_rail": "Convex guide rail",
   "block.slide_rail.concave_slide_block": "Concave slide block",

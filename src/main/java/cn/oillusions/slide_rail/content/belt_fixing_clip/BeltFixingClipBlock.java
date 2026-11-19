@@ -1,7 +1,7 @@
 package cn.oillusions.slide_rail.content.belt_fixing_clip;
 
 import cn.oillusions.slide_rail.AllBlockEntities;
-import cn.oillusions.slide_rail.content.foundation.DirectionAxisBlock;
+import cn.oillusions.slide_rail.content.foundation.FullyOrientedBlock;
 import cn.oillusions.slide_rail.content.util.DirectionalAxisVoxelShaper;
 import com.simibubi.create.foundation.block.IBE;
 import dev.ryanhcode.sable.api.block.BlockSubLevelCollisionShape;
@@ -17,7 +17,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
 public class BeltFixingClipBlock
-    extends DirectionAxisBlock
+    extends FullyOrientedBlock
     implements IBE<BeltFixingClipBlockEntity>,
     BlockSubLevelCollisionShape {
 
@@ -59,17 +59,18 @@ public class BeltFixingClipBlock
         @NotNull CollisionContext context
     ) {
         Direction facing = blockState.getValue(FACING);
-        Direction.Axis axis = blockState.getValue(AXIS);
-        return SHAPER.get(facing, axis);
+        boolean rotation = blockState.getValue(ROTATION);
+        return SHAPER.get(facing, rotation);
     }
 
     @Override
     @NotNull
     public VoxelShape getSubLevelCollisionShape(
         @NotNull BlockGetter blockGetter,
-        @NotNull BlockState blockState) {
+        @NotNull BlockState blockState
+    ) {
         Direction facing = blockState.getValue(FACING);
-        Direction.Axis axis = blockState.getValue(AXIS);
-        return SUBLEVEL_SHAPER.get(facing, axis);
+        boolean rotation = blockState.getValue(ROTATION);
+        return SUBLEVEL_SHAPER.get(facing, rotation);
     }
 }

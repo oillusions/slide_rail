@@ -1,80 +1,60 @@
 {
   "variants": {
-    "facing=up,axis=x": {
+    "facing=up,rotation=false": {
       "model": "slide_rail:block/convex_slide_block",
       "y": 90.0
     },
-    "facing=up,axis=z": {
+    "facing=up,rotation=true": {
       "model": "slide_rail:block/convex_slide_block",
       "y": 180.0
     },
-    "facing=north,axis=x": {
+    "facing=north,rotation=false": {
       "model": "slide_rail:block/convex_slide_block",
       "y": 90.0,
       "z": 270.0
     },
-    "facing=north,axis=y": {
+    "facing=north,rotation=true": {
       "model": "slide_rail:block/convex_slide_block",
       "x": 270.0,
       "y": 180.0
     },
-    "facing=south,axis=x": {
+    "facing=south,rotation=false": {
       "model": "slide_rail:block/convex_slide_block",
       "y": 270.0,
       "z": 270.0
     },
-    "facing=south,axis=y": {
+    "facing=south,rotation=true": {
       "model": "slide_rail:block/convex_slide_block",
       "x": 90.0,
       "y": 180.0
     },
-    "facing=west,axis=z": {
+    "facing=west,rotation=false": {
       "model": "slide_rail:block/convex_slide_block",
       "y": 180.0,
       "z": 90.0
     },
-    "facing=west,axis=y": {
+    "facing=west,rotation=true": {
       "model": "slide_rail:block/convex_slide_block",
       "x": 270.0,
       "y": 90.0
     },
-    "facing=east,axis=z": {
+    "facing=east,rotation=false": {
       "model": "slide_rail:block/convex_slide_block",
       "z": 90.0
     },
-    "facing=east,axis=y": {
+    "facing=east,rotation=true": {
       "model": "slide_rail:block/convex_slide_block",
       "x": 90.0,
       "y": 90.0
     },
-    "facing=down,axis=x": {
+    "facing=down,rotation=false": {
       "model": "slide_rail:block/convex_slide_block",
       "y": 270.0,
       "z": 180.0
     },
-    "facing=down,axis=z": {
+    "facing=down,rotation=true": {
       "model": "slide_rail:block/convex_slide_block",
       "z": 180.0
-    },
-    "facing=north,axis=z": {
-      "model": "slide_rail:block/convex_slide_block",
-      "x": 270.0,
-      "y": 180.0
-    },
-    "facing=south,axis=z": {
-      "model": "slide_rail:block/convex_slide_block",
-      "x": 90.0,
-      "y": 180.0
-    },
-    "facing=west,axis=x": {
-      "model": "slide_rail:block/convex_slide_block",
-      "x": 270.0,
-      "y": 90.0
-    },
-    "facing=east,axis=x": {
-      "model": "slide_rail:block/convex_slide_block",
-      "x": 90.0,
-      "y": 90.0
     }
   }
 }

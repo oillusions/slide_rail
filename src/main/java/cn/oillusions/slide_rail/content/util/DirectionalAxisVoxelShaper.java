@@ -16,15 +16,10 @@ public class DirectionalAxisVoxelShaper {
         this.SHAPER_UP_Z = VoxelShaper.forDirectional(shaperX.get(Direction.Axis.Z), Direction.UP);
     }
 
-    public VoxelShape get(Direction facing, Direction.Axis axis) {
+    public VoxelShape get(Direction facing, boolean rotation) {
         switch (facing) {
-            case UP, DOWN, SOUTH, NORTH -> {
-                return axis == Direction.Axis.X
-                    ? SHAPER_UP_Z.get(facing)
-                    : SHAPER_UP_X.get(facing);
-            }
-            case EAST, WEST -> {
-                return axis == Direction.Axis.X
+            case UP, DOWN, SOUTH, NORTH, EAST, WEST -> {
+                return rotation
                     ? SHAPER_UP_X.get(facing)
                     : SHAPER_UP_Z.get(facing);
             }

@@ -23,6 +23,7 @@ public class AllBlockLootSubProvider extends BlockLootSubProvider {
         dropSelf(AllBlocks.CONVEX_SLIDE_BLOCK.get());
         dropSelf(AllBlocks.CONCAVE_GUIDE_RAIL_BLOCK.get());
         dropSelf(AllBlocks.CONVEX_GUIDE_RAIL_BLOCK.get());
+        dropSelf(AllBlocks.BELT_FIXING_CLIP_BLOCK.get());
     }
 
     @Override
