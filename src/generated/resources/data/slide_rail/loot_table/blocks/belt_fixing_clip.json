@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "slide_rail:belt_fixing_clip"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "slide_rail:blocks/belt_fixing_clip"
+}
