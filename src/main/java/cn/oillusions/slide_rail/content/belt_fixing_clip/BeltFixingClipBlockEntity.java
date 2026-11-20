@@ -1,7 +1,6 @@
 package cn.oillusions.slide_rail.content.belt_fixing_clip;
 
 import cn.oillusions.slide_rail.AllBlockEntities;
-import cn.oillusions.slide_rail.ClientEvents;
 import cn.oillusions.slide_rail.content.util.Utils;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 import com.simibubi.create.content.kinetics.belt.BeltBlock;
@@ -19,7 +18,6 @@ import dev.ryanhcode.sable.sublevel.SubLevel;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.AABB;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Quaterniond;
@@ -102,7 +100,7 @@ public class BeltFixingClipBlockEntity
                 }
             }
         } else {
-//            level.destroyBlock(getBlockPos(), true);
+            level.destroyBlock(getBlockPos(), true);
 //            level.setBlock(getBlockPos(), Blocks.AIR.defaultBlockState(), Block.UPDATE_ALL);
         }
     }
@@ -124,8 +122,6 @@ public class BeltFixingClipBlockEntity
                 if (level == null || level.isClientSide()) return null;
                 if (sub == selfBody) return null;
 
-                BlockPos pos = Utils.vector3dToBlockPos(Sable.HELPER.projectOutOfSubLevel(level, Utils.blockPosToVector3d(plotBlockPos)), Math::floor);
-                ClientEvents.boxes.add(new ClientEvents.BoxInfo(new AABB(pos), 1.0f, 0.0f, 0.0f));
                 if (level.getBlockEntity(plotBlockPos) instanceof BeltBlockEntity targetBlockEntity) {
                     return new Result((ServerSubLevel) Sable.HELPER.getContaining(targetBlockEntity), targetBlockEntity);
                 }
@@ -133,7 +129,6 @@ public class BeltFixingClipBlockEntity
         });
 
         if (result != null) return result.targetBlockEntity();
-        ClientEvents.boxes.add(new ClientEvents.BoxInfo(new AABB(Utils.vector3dToBlockPos(Sable.HELPER.projectOutOfSubLevel(level, new Vector3d(blockPos)), Math::floor)), 0.0f, 1.0f, 0.0f));
         if (level.getBlockEntity(Utils.vector3dToBlockPos(Sable.HELPER.projectOutOfSubLevel(level, new Vector3d(blockPos)), Math::floor))
             instanceof BeltBlockEntity targetBlockEntity) {
             return targetBlockEntity;
